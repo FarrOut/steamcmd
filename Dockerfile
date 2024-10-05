@@ -22,6 +22,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN dpkg --add-architecture i386 \
  && apt-get update -y \
  && apt-get install -y --no-install-recommends ca-certificates locales curl steamcmd \
+ bc binutils bsdmainutils bzip2 cpio distro-info file jq lib32gcc-s1 lib32stdc++6 lib32z1 libsdl2-2.0-0:i386 netcat-openbsd pigz python3 tmux unzip uuid-runtime wget xz-utils \
  && rm -rf /var/lib/apt/lists/*
 
 # Add unicode support
